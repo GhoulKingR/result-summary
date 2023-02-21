@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="overview-container">
     <div class="head">Your Result</div>
     <div class="circle">
       <div class="hor-center">
@@ -8,15 +8,15 @@
       </div>
     </div>
     <div class="great">Great</div>
-    <div class="text">
+    <p class="text">
       You scored higher than 65% of the people
       who have taken these tests.
-    </div>
+    </p>
   </div>
 </template>
 
 <style scoped>
-  .container {
+  .overview-container {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     text-align: center;
     padding: 20px;
@@ -69,4 +69,42 @@
     font-weight: 500;
     font-size: small;
   }
+
+  @media (min-width: 700px) {
+    .overview-container {
+      display: block;
+      border-radius: 30px;
+      width: 50%;
+      padding: 40px;
+    }
+
+    .head {
+      font-size: 18px;
+    }
+
+    .circle {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+    }
+
+    .number {
+      font-size: xxx-large;
+    }
+
+    .of-100 {
+      font-size: large;
+    }
+
+    .great {
+      font-size: x-large;
+    }
+
+    .text {
+      font-size: large;
+    }
+  }
+
 </style>

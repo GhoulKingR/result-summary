@@ -8,7 +8,7 @@
 </script>
 
 <template>
-  <div class="container">
+  <div class="summary-item-container">
     <div>
       <img :src="data.icon" />
       {{ data.category }}
@@ -22,7 +22,7 @@
 </template>
 
 <style scoped>
-  .container {
+  .summary-item-container {
     padding: 20px;
     margin-top: 15px;
     margin-bottom: 15px;

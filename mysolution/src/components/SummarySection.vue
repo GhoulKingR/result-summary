@@ -29,7 +29,7 @@
 </script>
 
 <template>
-  <div class="container">
+  <div class="summary-container">
     <div class="text">Summary</div>
     <SummaryItem :data="object[0]" style="background-color: hsla(0, 100%, 67%, .1); color: hsl(0, 100%, 67%);"/>
     <SummaryItem :data="object[1]" style="background-color: hsla(39, 100%, 56%, .1); color: hsl(39, 100%, 56%);"/>
@@ -40,8 +40,15 @@
 </template>
 
 <style scoped>
-  .container {
+  .summary-container {
     padding: 20px;
+  }
+
+  @media (min-width: 700px) {
+    .summary-container {
+      width: 50%;
+      padding: 40px;
+    }
   }
 
   .text {
