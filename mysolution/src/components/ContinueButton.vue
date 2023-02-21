@@ -14,4 +14,9 @@
     font-weight: 700;
     font-size: medium;
   }
+
+  button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+  }
 </style>
